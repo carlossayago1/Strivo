@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strivo - La mejor tienda de zapatillas</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo" onclick="scrollToTop()">Strivo</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="index.html" class="cta-button">
+                <i class="fas fa-shopping-bag"></i>
+                Tienda
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1>Strivo</h1>
+            <p>Descubre la colección más exclusiva de zapatillas premium. Estilo, comodidad y calidad en cada paso.</p>
+            <div class="hero-buttons">
+                <a href="home.html" class="btn-primary">
+                    <i class="fas fa-shopping-cart"></i>
+                    Explorar Tienda
+                </a>
+                <a href="#productos" class="btn-secondary">
+                    <i class="fas fa-eye"></i>
+                    Ver Colección
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="nosotros">
+        <div class="features-container">
+            <h2 class="fade-in">¿Por qué elegir Strivo?</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Calidad Premium</h3>
+                    <p>Solo trabajamos con las mejores marcas y materiales de alta calidad para garantizar durabilidad y comodidad excepcional.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Envío Rápido</h3>
+                    <p>Entregas en 24-48 horas a nivel nacional. Tu pedido llegará rápido y seguro a la puerta de tu casa.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Devolución Fácil</h3>
+                    <p>30 días para cambios y devoluciones sin complicaciones. Tu satisfacción es nuestra prioridad número uno.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Nuestro equipo está disponible las 24 horas para ayudarte con cualquier consulta o problema que tengas.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Productos Exclusivos</h3>
+                    <p>Accede a ediciones limitadas y colaboraciones exclusivas que no encontrarás en ningún otro lugar.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Compra Segura</h3>
+                    <p>Transacciones 100% seguras con encriptación de datos y múltiples métodos de pago disponibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section class="products-preview" id="productos">
+        <div class="products-container">
+            <h2 class="fade-in">Productos Destacados</h2>
+            <p class="fade-in">Descubre nuestra selección curada de las mejores zapatillas del mercado</p>
+            
+            <div class="products-grid">
+                <div class="product-preview fade-in" onclick="goToStore()">
+                    <div class="product-image">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Adidas Forum</div>
+                        <div class="product-price">$89.99</div>
+                    </div>
+                </div>
+                <div class="product-preview fade-in" onclick="goToStore()">
+                    <div class="product-image">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Nike Legacy</div>
+                        <div class="product-price">$89.99</div>
+                    </div>
+                </div>
+                <div class="product-preview fade-in" onclick="goToStore()">
+                    <div class="product-image">
+                        <i class="fas fa-skating"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Adidas Campus</div>
+                        <div class="product-price">$79.99</div>
+                    </div>
+                </div>
+                <div class="product-preview fade-in" onclick="goToStore()">
+                    <div class="product-image">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Edición Especial</div>
+                        <div class="product-price">$149.99</div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="home.html" class="btn-primary">
+                <i class="fas fa-store"></i>
+                Ver Toda la Tienda
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item fade-in">
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Clientes Felices</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Productos</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Marcas Premium</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number" data-target="99">0</div>
+                <div class="stat-label">% Satisfacción</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Strivo</h3>
+                <p>Tu destino para las mejores zapatillas premium. Calidad, estilo y comodidad en cada paso.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Tienda</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="index.html#zapatillas">Zapatillas</a></li>
+                    <li><a href="index.html#accesorios">Accesorios</a></li>
+                    <li><a href="#">Ediciones Limitadas</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Envíos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Strivo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+   <script src="script3.js"></script>
+
+</body>
+</html>
