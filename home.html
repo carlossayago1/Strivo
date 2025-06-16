@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Strivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-nav">
+                <a href="#" class="home-icon"><img src="/img/home.png" alt="Inicio"></a>
+            </div>
+            <div class="center-nav">
+                <div class="search-container">
+                   <a href="index.html"> <div class="search-bar">
+                        <span class="brand-name">Strivo</span>
+                    </div></a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#zapatillas">Zapatillas</a></li>
+                        <li><a href="#accesorios">Accesorios</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-nav">
+                <a href="#" class="favorites"><img src="/img/cora.webp" alt="Favoritos"></a>
+                <div class="search-bar">
+                      <i class="fas fa-search"></i>
+                    <input type="text"placeholder="">
+                   
+                </div>
+               
+                <div class="cart-icon">
+                   <a href="cart.html"> <img src="/img/carrito.png" alt="Carrito" style="width: 24px; height: 24px;"></a>
+                    <span class="cart-counter" id="cart-counter">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-showcase">
+            <div class="product-container" id="featured-products">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para detalles del producto -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-title">Producto</h2>
+                <span class="close" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-image" src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-price" id="modal-price">$0.00</div>
+                    <div class="modal-description" id="modal-description">
+                        Zapatillas de alta calidad con diseño moderno y confort excepcional. 
+                        Perfectas para uso diario y actividades deportivas.
+                    </div>
+                    
+                    <div class="size-selector">
+                        <label>Talla:</label>
+                        <div class="size-options" id="size-options">
+                            <div class="size-option" data-size="7">7</div>
+                            <div class="size-option" data-size="7.5">7.5</div>
+                            <div class="size-option" data-size="8">8</div>
+                            <div class="size-option" data-size="8.5">8.5</div>
+                            <div class="size-option" data-size="9">9</div>
+                            <div class="size-option" data-size="9.5">9.5</div>
+                            <div class="size-option" data-size="10">10</div>
+                            <div class="size-option" data-size="10.5">10.5</div>
+                            <div class="size-option" data-size="11">11</div>
+                        </div>
+                    </div>
+
+                    <div class="quantity-selector">
+                        <label>Cantidad:</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" id="decrease-qty">-</button>
+                            <div class="quantity-display" id="quantity">1</div>
+                            <button class="quantity-btn" id="increase-qty">+</button>
+                        </div>
+                    </div>
+
+                    <button class="add-to-cart-btn" id="add-to-cart">
+                        Añadir al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast">
+        ¡Producto añadido al carrito!
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="payment-methods">
+                <h4>Medios de pago</h4>
+                <div class="payment-icons">
+                    <img src="/img/VISA-Logo.png" alt="Visa">
+                    <img src="/img/Mastercard-logo.png" alt="Mastercard">
+                    <img src="/img/EFECTY-LOGO-V1.png" alt="efecty">
+                    <img src="/img/Paypal_2014_logo.png" alt="PayPal">
+                </div>
+            </div>
+            
+            <div class="legal-info">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Políticas de devolución</a></li>
+                    <li><a href="#">Políticas de despacho</a></li>
+                    <li><a href="#">Derechos del consumidor/devoluciones</a></li>
+                    <li><a href="#">Superintendencia de Industria y Comercio</a></li>
+                    <li><a href="#">Cuenta</a></li>
+                </ul>
+            </div>
+            
+            <div class="social-networks">
+                <h4>Redes sociales</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="/img/Instagram_icon.png.webp" alt="Instagram"></a>
+                    <a href="#"><img src="/img/Facebook_logo_(square).png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

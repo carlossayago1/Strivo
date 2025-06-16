@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Strivo</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo" onclick="goHome()">Strivo</div>
+            <button class="back-btn" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+                Volver a la tienda
+            </button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="cart-section">
+            <h2 class="section-title">
+                <i class="fas fa-shopping-cart"></i>
+                Tu Carrito
+            </h2>
+            <div id="cart-items"></div>
+        </div>
+
+        <div class="payment-section">
+            <h2 class="section-title">
+                <i class="fas fa-credit-card"></i>
+                Resumen del Pedido
+            </h2>
+            
+            <div class="order-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Envío:</span>
+                    <span id="shipping">$15.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Impuestos:</span>
+                    <span id="taxes">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+            </div>
+
+            <div class="payment-form">
+                <h3 style="margin-bottom: 20px; color: #4CAF50;">
+                    <i class="fas fa-lock"></i>
+                    Información de Pago
+                </h3>
+
+                <div class="payment-methods">
+                    <div class="payment-method selected" data-method="credit">
+                        <i class="fas fa-credit-card" style="font-size: 20px; margin-bottom: 5px;"></i>
+                        <div style="font-size: 12px;">Tarjeta</div>
+                    </div>
+                    <div class="payment-method" data-method="paypal">
+                        <i class="fab fa-paypal" style="font-size: 20px; margin-bottom: 5px; color: #0070ba;"></i>
+                        <div style="font-size: 12px;">PayPal</div>
+                    </div>
+                    <div class="payment-method" data-method="efecty">
+                        <i class="fas fa-money-bill-wave" style="font-size: 20px; margin-bottom: 5px; color: #ff6b35;"></i>
+                        <div style="font-size: 12px;">Efecty</div>
+                    </div>
+                </div>
+
+                <div id="credit-form">
+                    <div class="form-group">
+                        <label>Número de Tarjeta</label>
+                        <input type="text" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19" id="card-number">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Fecha de Vencimiento</label>
+                            <input type="text" class="form-control" placeholder="MM/AA" maxlength="5" id="expiry">
+                        </div>
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="text" class="form-control" placeholder="123" maxlength="3" id="cvv">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Nombre del Titular</label>
+                        <input type="text" class="form-control" placeholder="Juan Pérez" id="card-holder">
+                    </div>
+                </div>
+
+                <div id="paypal-form" style="display: none;">
+                    <div class="form-group">
+                        <label>Email de PayPal</label>
+                        <input type="email" class="form-control" placeholder="tu@email.com" id="paypal-email">
+                    </div>
+                </div>
+
+                <div id="efecty-form" style="display: none;">
+                    <div class="form-group">
+                        <label>Número de Documento</label>
+                        <input type="text" class="form-control" placeholder="12345678" id="document-number">
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="text" class="form-control" placeholder="3001234567" id="phone">
+                    </div>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Procesando pago...</p>
+                </div>
+
+                <button class="checkout-btn" id="checkout-btn" onclick="processPayment()">
+                    <i class="fas fa-lock"></i>
+                    Pagar Ahora
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="success-modal">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>¡Pago Exitoso!</h2>
+            <p>Tu pedido ha sido procesado correctamente. Recibirás un email de confirmación pronto.</p>
+            <p><strong>Número de orden:</strong> <span id="order-number"></span></p>
+           <a href="index.html"> <button class="continue-btn" onclick="continueShopping()"> 
+                Continuar Comprando
+            </button></a>
+        </div>
+    </div>
+</body>
+</html>
+ 
+    <script src="script2.js"></script>
+    
+</body>
+</html>
