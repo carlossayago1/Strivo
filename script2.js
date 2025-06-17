@@ -19,11 +19,11 @@
                         price: 89.99,
                         size: "9",
                         quantity: 1,
-<<<<<<< HEAD
-                        image: "./img/zapas1.webp"
-=======
+
+                        image: "img/zapas1.webp"
+
                         image: "/img/zapas1.webp"
->>>>>>> fdc452cb37929855d248e75e81098c8d5a09adc6
+
                     },
                     {
                         id: 2,
@@ -31,11 +31,11 @@
                         price: 79.99,
                         size: "8.5",
                         quantity: 2,
-<<<<<<< HEAD
-                        image: "./img/zapas2.webp"
-=======
+
+                        image: "img/zapas2.webp"
+
                         image: "/img/zapas2.webp"
->>>>>>> fdc452cb37929855d248e75e81098c8d5a09adc6
+
                     }
                 ];
             }
