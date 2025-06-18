@@ -6,9 +6,13 @@ const products = [
         price: 89.99,
         category: "zapatillas",
 
+
         image: "img/zapas1.webp",
 
-        image: "/img/zapas1.webp",
+        image: "img/zapas1.webp",
+
+
+        image: "img/zapas1.webp",
 
         description: "Zapatillas Forum de Adidas con estilo clásico y comodidad moderna. Perfectas para el uso diario con suela de goma resistente."
     },
@@ -18,9 +22,13 @@ const products = [
         price: 79.99,
         category: "zapatillas",
 
+
         image: "img/zapas2.webp",
 
-        image: "/img/zapas2.webp",
+        image: "img/zapas2.webp",
+
+
+        image: "img/zapas2.webp",
 
         description: "Campus Adidas con diseño retro y materiales de primera calidad. Combina estilo vintage con tecnología moderna."
     },
@@ -30,9 +38,13 @@ const products = [
         price: 99.99,
         category: "zapatillas",
 
+
         image: "img/zapas3.webp",
 
-        image: "/img/zapas3.webp",
+        image: "img/zapas3.webp",
+
+
+        image: "img/zapas3.webp",
 
         description: "Zapatillas Samba clásicas con suela de goma y parte superior de cuero. Icónico diseño deportivo atemporal."
     },
@@ -42,9 +54,13 @@ const products = [
         price: 149.99,
         category: "zapatillas",
 
+
         image: "img/zapas4.webp",
 
-        image: "/img/zapas4.webp",
+        image: "img/zapas4.webp",
+
+
+        image: "img/zapas4.webp",
 
         description: "Colaboración exclusiva Adidas x Bad Bunny con diseño único y limitado. Edición especial para coleccionistas."
     },
@@ -54,9 +70,13 @@ const products = [
         price: 179.99,
         category: "accesorios",
 
+
         image: "img/zapas5.webp",
 
-        image: "/img/zapas5.webp",
+        image: "img/zapas5.webp",
+
+
+        image: "img/zapas5.webp",
 
         description: "Segunda colaboración Forum Bad Bunny con detalles únicos y colores vibrantes. Pieza exclusiva de colección."
     },
@@ -66,9 +86,13 @@ const products = [
         price: 69.99,
         category: "zapatillas",
 
+
         image: "img/zapas6.webp",
 
-        image: "/img/zapas6.webp",
+        image: "img/zapas6.webp",
+
+
+        image: "img/zapas6.webp",
 
         description: "Icónicas Superstar de Adidas con las tres rayas características y punta de concha. Un clásico reinventado."
     },
@@ -78,9 +102,13 @@ const products = [
         price: 89.99,
         category: "zapatillas",
 
+
         image: "img/zapas7.png",
 
-        image: "/img/zapas7.png",
+        image: "img/zapas7.png",
+
+
+        image: "img/zapas7.png",
 
         description: "Nike Legacy con tecnología moderna y diseño deportivo elegante. Comodidad y estilo en cada paso."
     },
@@ -90,9 +118,13 @@ const products = [
         price: 85.99,
         category: "zapatillas",
 
+
         image: "img/zapas8.webp",
 
-        image: "/img/zapas8.webp",
+        image: "img/zapas8.webp",
+
+
+        image: "img/zapas8.webp",
 
         description: "Forum clásico con perfil bajo y estilo urbano contemporáneo. Perfectas para cualquier ocasión."
     }
@@ -125,9 +157,13 @@ function loadProducts(category = null) {
         productCard.innerHTML = `
             <div class="product-image">
 
+
                 <img src="${product.image}" alt="${product.name}" onerror="this.src='img/placeholder.jpg'">
 
-                <img src="${product.image}" alt="${product.name}" onerror="this.src='/img/placeholder.jpg'">
+                <img src="${product.image}" alt="${product.name}" onerror="this.src='img/placeholder.jpg'">
+
+
+                <img src="${product.image}" alt="${product.name}" onerror="this.src='img/placeholder.jpg'">
 
             </div>
             <div class="product-info">
@@ -412,9 +448,13 @@ function performSearch(searchTerm) {
         productCard.innerHTML = `
             <div class="product-image">
 
+
                 <img src="${product.image}" alt="${product.name}" onerror="this.src='img/placeholder.jpg'">
 
-                <img src="${product.image}" alt="${product.name}" onerror="this.src='/img/placeholder.jpg'">
+                <img src="${product.image}" alt="${product.name}" onerror="this.src='img/placeholder.jpg'">
+
+
+                <img src="${product.image}" alt="${product.name}" onerror="this.src='img/placeholder.jpg'">
 
             </div>
             <div class="product-info">

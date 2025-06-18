@@ -20,9 +20,13 @@
                         size: "9",
                         quantity: 1,
 
+
                         image: "img/zapas1.webp"
 
-                        image: "/img/zapas1.webp"
+                        image: "img/zapas1.webp"
+
+
+                        image: "img/zapas1.webp"
 
                     },
                     {
@@ -32,9 +36,13 @@
                         size: "8.5",
                         quantity: 2,
 
+
                         image: "img/zapas2.webp"
 
-                        image: "/img/zapas2.webp"
+                        image: "img/zapas2.webp"
+
+
+                        image: "img/zapas2.webp"
 
                     }
                 ];
