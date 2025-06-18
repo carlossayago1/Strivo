@@ -90,9 +90,8 @@ const products = [
         image: "img/zapas6.webp",
 
         image: "img/zapas6.webp",
-
-
-        image: "img/zapas6.webp",
+        
+        
 
         description: "Icónicas Superstar de Adidas con las tres rayas características y punta de concha. Un clásico reinventado."
     },
@@ -105,10 +104,7 @@ const products = [
 
         image: "img/zapas7.png",
 
-        image: "img/zapas7.png",
-
-
-        image: "img/zapas7.png",
+        
 
         description: "Nike Legacy con tecnología moderna y diseño deportivo elegante. Comodidad y estilo en cada paso."
     },
@@ -121,10 +117,7 @@ const products = [
 
         image: "img/zapas8.webp",
 
-        image: "img/zapas8.webp",
-
-
-        image: "img/zapas8.webp",
+        
 
         description: "Forum clásico con perfil bajo y estilo urbano contemporáneo. Perfectas para cualquier ocasión."
     }

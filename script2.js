@@ -1,5 +1,4 @@
-
-        // Variables globales
+// Variables globales
         let cart = [];
         let selectedPaymentMethod = 'credit';
 
@@ -19,15 +18,7 @@
                         price: 89.99,
                         size: "9",
                         quantity: 1,
-
-
-                        image: "img/zapas1.webp"
-
-                        image: "img/zapas1.webp"
-
-
-                        image: "img/zapas1.webp"
-
+                        image: "/img/zapas1.webp"
                     },
                     {
                         id: 2,
@@ -35,15 +26,7 @@
                         price: 79.99,
                         size: "8.5",
                         quantity: 2,
-
-
-                        image: "img/zapas2.webp"
-
-                        image: "img/zapas2.webp"
-
-
-                        image: "img/zapas2.webp"
-
+                        image: "/img/zapas2.webp"
                     }
                 ];
             }
@@ -245,12 +228,12 @@
         }
 
         function goHome() {
-            window.location.href = 'index.html';
+            window.location.href = 'catalogo.html';
         }
 
         function continueShopping() {
             document.getElementById('success-modal').style.display = 'none';
-            window.location.href = 'index.html';
+            window.location.href = 'catalogo.html';
         }
 
         // Inicializar página
